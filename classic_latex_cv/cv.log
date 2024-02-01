@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.11.26)  19 DEC 2023 15:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.11.26)  1 FEB 2024 10:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -346,36 +346,54 @@ Package graphics Info: Driver file: pdftex.def on input line 107.
 \Gin@req@height=\dimen167
 \Gin@req@width=\dimen168
 )
-(/usr/local/texlive/2023/texmf-dist/tex/generic/pdftex/glyphtounicode.tex)
-Package hyperref Info: Option `colorlinks' set `true' on input line 40.
-Package hyperref Info: Option `breaklinks' set `true' on input line 40.
+(/usr/local/texlive/2023/texmf-dist/tex/latex/fontawesome5/fontawesome5.sty
+(/usr/local/texlive/2023/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2023-02-22 L3 programming layer (loader) 
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count280
 \l__pdf_internal_box=\box55
+))
+Package: fontawesome5 2022/05/02 v5.15.4 Font Awesome 5
+
+(/usr/local/texlive/2023/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+Package: l3keys2e 2023-02-02 LaTeX2e option processing using LaTeX3 keys
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2023-02-02 L3 Experimental document command parser
 )
+(/usr/local/texlive/2023/texmf-dist/tex/latex/fontawesome5/fontawesome5-generic
+-helper.sty
+Package: fontawesome5-generic-helper 2022/05/02 v5.15.4 non-uTeX helper for fon
+tawesome5
+
+(/usr/local/texlive/2023/texmf-dist/tex/latex/fontawesome5/fontawesome5-mapping
+.def)))
+(/usr/local/texlive/2023/texmf-dist/tex/generic/pdftex/glyphtounicode.tex)
+Package hyperref Info: Option `colorlinks' set `true' on input line 50.
+Package hyperref Info: Option `breaklinks' set `true' on input line 50.
+
 (./cv.aux)
 \openout1 = `cv.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 125.
-LaTeX Font Info:    ... okay on input line 125.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 125.
-LaTeX Font Info:    ... okay on input line 125.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 125.
-LaTeX Font Info:    ... okay on input line 125.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 125.
-LaTeX Font Info:    ... okay on input line 125.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 125.
-LaTeX Font Info:    ... okay on input line 125.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 125.
-LaTeX Font Info:    ... okay on input line 125.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 125.
-LaTeX Font Info:    ... okay on input line 125.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 125.
-LaTeX Font Info:    ... okay on input line 125.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 125.
-LaTeX Font Info:    ... okay on input line 125.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 135.
+LaTeX Font Info:    ... okay on input line 135.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 135.
+LaTeX Font Info:    ... okay on input line 135.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 135.
+LaTeX Font Info:    ... okay on input line 135.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 135.
+LaTeX Font Info:    ... okay on input line 135.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 135.
+LaTeX Font Info:    ... okay on input line 135.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 135.
+LaTeX Font Info:    ... okay on input line 135.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 135.
+LaTeX Font Info:    ... okay on input line 135.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 135.
+LaTeX Font Info:    ... okay on input line 135.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 135.
+LaTeX Font Info:    ... okay on input line 135.
 
 (/usr/local/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -399,7 +417,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-Package hyperref Info: Link coloring ON on input line 125.
+Package hyperref Info: Link coloring ON on input line 135.
 
 (./cv.out) (./cv.out)
 \@outlinefile=\write3
@@ -442,34 +460,57 @@ Package hyperref Info: Link coloring ON on input line 125.
 
 
 LaTeX Font Warning: Font shape `OT1/cmr/bx/sc' undefined
-(Font)              using `OT1/cmr/bx/n' instead on input line 128.
+(Font)              using `OT1/cmr/bx/n' instead on input line 137.
 
+LaTeX Font Info:    Trying to load font information for U+fontawesomebrands1 on
+ input line 143.
+
+(/usr/local/texlive/2023/texmf-dist/tex/latex/fontawesome5/ufontawesomebrands1.
+fd)
+LaTeX Font Info:    Font shape `U/fontawesomebrands1/solid/n' in size <17.28> n
+ot available
+(Font)              Font shape `U/fontawesomebrands1/regular/n' tried instead o
+n input line 143.
+LaTeX Font Info:    Trying to load font information for U+fontawesomebrands0 on
+ input line 144.
+
+(/usr/local/texlive/2023/texmf-dist/tex/latex/fontawesome5/ufontawesomebrands0.
+fd)
+LaTeX Font Info:    Font shape `U/fontawesomebrands0/solid/n' in size <17.28> n
+ot available
+(Font)              Font shape `U/fontawesomebrands0/regular/n' tried instead o
+n input line 144.
+LaTeX Font Info:    Trying to load font information for U+fontawesomefree1 on i
+nput line 147.
+
+(/usr/local/texlive/2023/texmf-dist/tex/latex/fontawesome5/ufontawesomefree1.fd
+)
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 183.
+(Font)              <7> on input line 200.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 183.
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 18
-3.
-(/usr/local/texlive/2023/texmf-dist/tex/latex/base/ulasy.fd
+(Font)              <5> on input line 200.
+LaTeX Font Info:    Trying to load font information for U+lasy on input line 20
+0.
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-Overfull \hbox (0.66399pt too wide) in paragraph at lines 183--186
+Overfull \hbox (0.66399pt too wide) in paragraph at lines 200--203
 []$ 
  []
 
 
-Overfull \hbox (0.66399pt too wide) in paragraph at lines 186--189
+Overfull \hbox (0.66399pt too wide) in paragraph at lines 203--206
 []$ 
  []
 
 
-Overfull \hbox (0.66399pt too wide) in paragraph at lines 189--191
+Overfull \hbox (0.66399pt too wide) in paragraph at lines 206--208
 []$ 
  []
 
 
 Package enumitem Warning: Negative labelwidth. This does not make much
-(enumitem)                sense, on input line 206.
+(enumitem)                sense, on input line 223.
 
 
 Package fancyhdr Warning: \footskip is too small (0.0pt): 
@@ -479,7 +520,10 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 [1
 
 {/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/loc
-al/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+al/texlive/2023/texmf-dist/fonts/enc/dvips/fontawesome5/fa5brands1.enc}{/usr/lo
+cal/texlive/2023/texmf-dist/fonts/enc/dvips/fontawesome5/fa5brands0.enc}{/usr/l
+ocal/texlive/2023/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free1.enc}{/usr/lo
+cal/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
 
 Package fancyhdr Warning: \footskip is too small (0.0pt): 
 (fancyhdr)                Make it at least 3.60004pt, for example:
@@ -490,27 +534,31 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `cv.out' has not changed.
-(rerunfilecheck)             Checksum: A91D527FC68D14CCBE81D598E100C263;1144.
+(rerunfilecheck)             Checksum: AF55FDC6C63C4B5690174F35782C560D;1627.
  ) 
 Here is how much of TeX's memory you used:
- 11675 strings out of 476025
- 186160 string characters out of 5790016
- 1869388 words of memory out of 5000000
- 31960 multiletter control sequences out of 15000+600000
- 514801 words of font info for 42 fonts, out of 8000000 for 9000
+ 14862 strings out of 476025
+ 257748 string characters out of 5790016
+ 1870388 words of memory out of 5000000
+ 35109 multiletter control sequences out of 15000+600000
+ 515987 words of font info for 46 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,11n,76p,292b,555s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb>
-</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></
-usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr
-/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/
-local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on cv.pdf (2 pages, 110393 bytes).
+ 75i,11n,76p,294b,555s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2023/texmf-dist/fonts/type1/public/fontawesome5/FontAweso
+me5Brands-Regular.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/fo
+ntawesome5/FontAwesome5Free-Solid.pfb></usr/local/texlive/2023/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2023/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmti10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/pub
+lic/cm-super/sfrm1000.pfb>
+Output written on cv.pdf (2 pages, 158875 bytes).
 PDF statistics:
- 94 PDF objects out of 1000 (max. 8388607)
- 75 compressed objects within 1 object stream
- 12 named destinations out of 1000 (max. 500000)
- 73 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 126 PDF objects out of 1000 (max. 8388607)
+ 100 compressed objects within 1 object stream
+ 14 named destinations out of 1000 (max. 500000)
+ 89 words of extra memory for PDF output out of 10000 (max. 10000000)
 

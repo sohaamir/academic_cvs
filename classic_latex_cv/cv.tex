@@ -26,10 +26,20 @@
 \usepackage{changepage}
 \usepackage{graphicx}
 \usepackage{fancyhdr}
+\usepackage{fontawesome5} % For icons
 
 \pagestyle{fancy}
 
 \definecolor{linkcolor}{RGB}{0,0,255} % Blue color for links
+
+% Define colors for each icon
+\definecolor{linkedinblue}{rgb}{0, 0.24, 0.51} % Navy Blue for LinkedIn
+\definecolor{orcidgreen}{rgb}{0.67, 0.88, 0.42} % Lime Green for ORCID
+\definecolor{emailbrown}{rgb}{0.65, 0.49, 0.24} % Light Brown for Email
+\definecolor{websiteblue}{rgb}{0, 0.78, 1} % Neon Blue for Website
+
+
+
 \input{glyphtounicode}
 
 \hypersetup{
@@ -123,14 +133,21 @@
 
 
 \begin{document}
-
 \begin{center}
     \textbf{\Huge \scshape AAMIR SOHAIL} \\ \vspace{8pt}
-    MRC AIM DTP PhD Student in Psychology \\ \vspace{1pt}
-    School of Psychology, University of Birmingham \\ \vspace{1pt}
-    Website: \href{https://sohaamir.github.io}{\color{linkcolor}https://sohaamir.github.io} \\ \vspace{1pt}
-    Contact email: \href{mailto:axs2210@bham.ac.uk}{\color{linkcolor}axs2210@student.bham.ac.uk} \\
-    Last updated: 02/12/2023
+    {\large MRC AIM DTP PhD Student in Psychology} \\ \vspace{1pt}
+    {\large School of Psychology, University of Birmingham} \\ \vspace{8pt}
+ % Increased spacing here
+
+% First row with ORCID and LinkedIn
+\raisebox{-0.5\height}{\LARGE \textcolor{orcidgreen}{\faOrcid}}\ \href{https://orcid.org/0000-0002-6584-4579}{\raisebox{-0.5\height}{0000-0002-6584-4579}} \quad \quad
+\raisebox{-0.5\height}{\LARGE \textcolor{linkedinblue}{\faLinkedin}}\ \href{https://www.linkedin.com/in/aamir-sohail-3a42b9293}{\raisebox{-0.5\height}{aamir-sohail-3a42b9293}} \\
+\vspace{5pt} 
+% Second row with Email and Website
+\raisebox{-0.5\height}{\LARGE \textcolor{emailbrown}{\faEnvelope}}\ \href{mailto:axs2210@bham.ac.uk}{\raisebox{-0.5\height}{axs2210@student.bham.ac.uk}} \quad  \quad
+\raisebox{-0.5\height}{\LARGE \textcolor{websiteblue}{\faGlobe}}\ \href{https://sohaamir.github.io}{\raisebox{-0.5\height}{https://sohaamir.github.io}}
+\vspace{8pt} \\
+Last updated: 14/01/2024
 \end{center}
 
 %-----------EDUCATION-----------
@@ -190,7 +207,7 @@ Supervisors: Professor Anne R. Lingford-Hughes, Dr Samuel P. Turton
 \vspace{4pt} 
   \resumeSubHeadingListEnd
   
-%-----------EXPERIENCE-----------
+%-----------AWARDS-----------
 \section{Honours and Awards}
 \vspace{2pt}
 \textbf{MRC AIM Doctoral Training Program} (\textasciitilde £100,000) \hfill Sep 2023 -- Sep 2027 \\
@@ -205,18 +222,43 @@ University of Reading \textit{(co-applicant w/ Eleanor Benford)}
 \vspace{2pt}
 \begin{description}[left=0pt, font=\normalfont\bfseries]
   \item[Programming Languages:] Python, R, MATLAB, bash, stan, \LaTeX{}
-  \item[Neuroimaging Software:] FSL, SPM12, CONN
-  \item[Online Research Services:] REDCap, SONA, Gorilla, Prolific, 10to8, Nutanix, git/GitHub, LIONESS
+  \item[Neuroimaging Software:] FSL, SPM12, CONN, mricro
+  \item[Online Research Services:] REDCap, SONA, Gorilla, Prolific, 10to8, Nutanix, git/GitHub
   \item[Other:] Web design (GitHub Pages, WordPress), Editing (DaVinci Resolve)
 \end{description}
 
 %-----------TEACHING-----------
 \section{Teaching}
 \vspace{2pt}
-\textbf{Introduction to Neuroscience Methods} (As a Teaching Assistant) \hfill Jan 2023 -- Apr 2023 \\
+\textbf{Magnetic Resonance Imaging in Cognitive Neuroscience}  \hfill Jan 2024 -- Apr 2024 \\
+Postgraduate level, University of Birmingham \\
+\textit{Linux, bash scripting, neural basis of MRI/fMRI, FSL (ROI, diffusion and fMRI analysis) } \\
+Module convenors: Dr Magda Chechlacz, Dr Martin Wilson, Professor Andrew Bagshaw \\
+\vspace{8pt}
+\textbf{Introduction to Neuroscience Methods} \hfill Jan 2023 -- Apr 2023 \\
 Undergraduate level, University of Reading \\
 \textit{Brain structure/function, MR physics, psychopharmacology, neuroethics} \\
+Module convenors: Professor Anastasia Christakou, Professor Bhismadev Chakrabarti  \\
 \vspace{4pt} 
+
+%-----------OUTREACH-----------
+\section{Public communications and outreach}
+\vspace{2pt}
+\textbf{OHBM Mentorship Program}  \hfill 2024 \\
+Mentor: Dr Marianna Kapsetaki, Mentee: Eleanor Benford \\
+\vspace{8pt}
+\textbf{CINN Work Experience Scheme}  \hfill 2023 \\
+Responsible for running work experience placements for college students (7 programs ran) \\
+\vspace{8pt}
+\textbf{Reading Scholars} \\
+Organised and ran practical sessions demonstrating MRI, EEG and TMS facilities to college students\\
+\vspace{4pt} 
+
+%-----------MEMBERSHIPS-----------
+\section{Professional memberships and affiliations}
+\vspace{2pt}
+\textbf{R Users Group - University of Birmingham}  \hfill 2023 -  \\
+\vspace{8pt}
 
 %-----------ORGANISING CONFERENCES-----------
 \section{Organisation of conferences and symposia}
