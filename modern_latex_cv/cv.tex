@@ -1,0 +1,248 @@
+%------------------------------------
+% Dario Taraborelli
+% Typesetting your academic CV in LaTeX
+%
+% URL: http://nitens.org/taraborelli/cvtex
+% DISCLAIMER: This template is provided for free and without any guarantee 
+% that it will correctly compile on your system if you have a non-standard  
+% configuration.
+% Some rights reserved: http://creativecommons.org/licenses/by-sa/3.0/
+%------------------------------------
+
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+\documentclass[10pt, a4paper]{article}
+\usepackage{fontspec}
+\usepackage{graphicx}
+\usepackage{adjustbox}
+\usepackage{geometry}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\usepackage{sectsty}
+\usepackage[normalem]{ulem}
+\usepackage{marginnote}
+\usepackage{hyperref} 
+\usepackage{xcolor} 
+\usepackage{enumitem}
+\definecolor{MidnightBlue}{RGB}{9,40,217}
+\usepackage{fontawesome5}
+\usepackage{hyperref}
+\usepackage{array}
+
+% DOCUMENT LAYOUT
+\geometry{
+  a4paper,
+  textwidth=5.5in,
+  textheight=8.5in,
+  marginparsep=7pt,
+  marginparwidth=.6in
+}
+\setlength\parindent{0in}
+
+% FONTS
+\defaultfontfeatures{Mapping=tex-text}
+\setromanfont[Ligatures={Common}, Numbers={OldStyle}]{Linux Libertine O}
+\setmonofont[Scale=0.8]{Monaco}
+
+% Define the natural colors for the logos
+\definecolor{orcidlogocol}{HTML}{A6CE39}
+\definecolor{linkedincol}{HTML}{0077B5}
+\definecolor{twittercol}{HTML}{1DA1F2}
+\definecolor{githubcol}{HTML}{181717}
+\definecolor{websitecol}{HTML}{0077B5} % You can adjust this to your preferred website icon color
+\definecolor{brown}{RGB}{204,125,80}
+
+% CUSTOM COMMANDS
+\chardef\&="E050
+\newcommand{\html}[1]{\href{#1}{\scriptsize\textsc{[html]}}}
+\newcommand{\pdf}[1]{\href{#1}{\scriptsize\textsc{[pdf]}}}
+\newcommand{\doi}[1]{\href{#1}{\scriptsize\textsc{[doi]}}}
+
+% MARGIN YEARS
+\newcommand{\amper{}}{\chardef\amper="E0BD }
+\newcommand{\years}[1]{\leavevmode\marginnote{\hspace{1cm}#1}}
+
+\renewcommand*{\raggedleftmarginnote}{}
+\setlength{\marginparsep}{7pt}
+\renewcommand*{\marginfont}{\scriptsize\color{gray}}
+\setlength{\marginparsep}{8pt} % Space between main text and margin note
+\setlength{\marginparwidth}{1in} % Width of the margin note
+\reversemarginpar
+
+% HEADINGS
+\sectionfont{\mdseries\scshape\Large}
+\subsectionfont{\mdseries\scshape\normalsize}
+\subsubsectionfont{\mdseries\upshape\large}
+
+% HYPERLINK COLORS
+\hypersetup{
+  colorlinks=true,
+  linkcolor=MidnightBlue,
+  filecolor=MidnightBlue,
+  urlcolor=MidnightBlue,
+  citecolor=MidnightBlue
+}
+
+\begin{document}
+
+% Title Section
+\noindent{\Huge\fontspec{Cardo} Aamir Sohail}\\
+\bigskip
+
+% Contact Information
+\noindent
+\begin{minipage}[t]{0.5\textwidth}
+  \subsection*{MRC AIM PhD Student in Psychology}
+  \textbf{Centre for Human Brain Health}\\
+  \textbf{School of Psychology}\\
+  \textbf{University of Birmingham} \\
+  \textbf{Birmingham} \\
+  \textbf{United Kingdom} 
+  
+\end{minipage}%
+\begin{minipage}[t]{0.5\textwidth}
+  \raggedleft
+  \begin{tabular}[t]{@{}c@{ }l@{}}
+    {\color{websitecol}\faGlobe} & \href{http://sohaamir.github.io}{sohaamir.github.io}\\
+    {\color{orcidlogocol}\faOrcid} & \href{https://orcid.org/0009-0000-6584-4579}{0009-0000-6584-4579}\\
+    {\color{twittercol}\faTwitter} & \href{http://twitter.com/anothersohail}{anothersohail}\\
+    {\color{githubcol}\faGithub} & \href{http://github.com/sohaamir}{sohaamir}\\
+    {\color{linkedincol}\faLinkedin} & \href{https://www.linkedin.com/in/aamir-sohail-3a42b9293/}{aamir-sohail-3a42b9293}\\
+    {\color{brown}\faEnvelope} & \href{mailto:axs2210@student.bham.ac.uk}{axs2210@student.bham.ac.uk}
+  \end{tabular}
+\end{minipage}
+
+\bigskip
+
+%%\hrule
+%\section*{Current work}
+%• Hierarchical modeling of predictive choice\\
+%• Transdiagnostic factors of social and direct learning\\
+
+%\hrule
+\section*{Education}
+\noindent
+\years{2023 - present}\textsc{PhD} in Psychology, University of Birmingham\\
+\years{2018}\textsc{MSc} in Brain Imaging, University of Nottingham\\
+\years{2016}\textsc{BSc} in Biomedical Science, Imperial College London
+
+%%\hrule
+\section*{Employment history}
+\noindent
+\years{2022 - 2023}University of Reading, CINN Operations Support\\
+\years{2021-2022}University of Reading, CINN Assistant\\
+\years{2021}University of Reading, Junior Research Fellow
+
+%\hrule
+\section*{Grants, honors \& awards}
+\noindent
+\years{2023}MRC AIM Doctoral Training Program, Medical Research Council / University of Birmingham (£100,000)\\
+\vspace{0.5pt}\\
+\years{2023}LGBT+ Inclusion Initiative Fund, University of Reading (up to £1,000)
+
+\section*{Technical Skills}
+\begin{description}[leftmargin=0pt, labelindent=0pt]
+  \item[Programming Languages:] Python, R, MATLAB, bash, stan, \LaTeX{}
+  \item[Neuroimaging Software:] FSL, SPM12, CONN, mricro
+  \item[Online Research Services:] REDCap, SONA, Gorilla, Prolific, 10to8, Nutanix, git/GitHub
+  \item[Other:] Web design (GitHub Pages, WordPress), Editing (DaVinci Resolve)
+\end{description}
+
+%-----------TEACHING-----------
+\section*{Teaching}
+\subsection*{University of Birmingham}
+\textbf{Magnetic Resonance Imaging in Cognitive Neuroscience}  \hfill Jan 2024 -- Apr 2024 \\
+Postgraduate level \\
+\textit{Linux, bash scripting, neural basis of MRI/fMRI, FSL (ROI, diffusion and fMRI analysis) } \\
+Module convenors: Dr Magda Chechlacz, Dr Martin Wilson, Professor Andrew Bagshaw \\
+\subsection*{University of Reading}
+\textbf{Introduction to Neuroscience Methods} \hfill Jan 2023 -- Apr 2023 \\
+Undergraduate level \\
+\textit{Brain structure/function, MR physics, psychopharmacology, neuroethics} \\
+Module convenors: Professor Anastasia Christakou, Professor Bhismadev Chakrabarti  \\
+
+%-----------OUTREACH-----------
+\section*{Public Communications and Outreach}
+\textbf{OHBM Mentorship Program}  \hfill 2024 \\
+Mentor: Dr Marianna Kapsetaki, Mentee: Eleanor Benford \\
+
+\textbf{CINN Work Experience Scheme}  \hfill 2023 \\
+Responsible for running work experience placements for college students (7 programs ran) \\
+
+\textbf{Reading Scholars} \\
+Organized and ran sessions demonstrating MRI, EEG and TMS facilities to college students \\
+
+%-----------PROFESSIONAL MEMBERSHIPS-----------
+\section*{Professional Memberships and Affiliations}
+\textbf{R Users Group - University of Birmingham}  \hfill 2023 - present \\
+
+%-----------ORGANIZING CONFERENCES-----------
+\section*{Organization of Conferences and Symposia}
+\textbf{Reading Emotions 2023: Fluctuations and Change}  \\
+\textit{15-16 June 2023, University of Reading} \\
+
+\textbf{Cerebral Haemodynamics Symposium}  \\
+\textit{23 July 2021, University of Reading (Online)} \\
+
+%-----------CONFERENCE PRESENTATIONS-----------
+\section*{Conference Presentations}
+Rossetti, G.M.K., \textbf{The HAVEN Study Researchers.,} Lovegrove J.A., Gibbins J.M., Christakou A. (2022) \textbf{Preliminary
+findings from the HAVEN Study: Investigating Haemostatic function, vessel health and neurocognitive health.}
+\textit{Poster presented at Interpreting BOLD III.} Oxford, UK. \\
+
+Rossetti, G.M.K., \textbf{Sohail, A.,} Bell, T., Christakou, A. (2021) \textbf{Differential haemodynamic responses in the human striatum
+during initial and reversal learning.} \textit{Poster presented at Interpreting BOLD Taster Session.} Online. \\
+
+Williams, B., Lee, O., Vanags, P., \textbf{Sohail, A.,} Brady, D., FitzGibbon, L., Christakou, A. \textbf{Test-retest reliability of
+model parameter estimates in human reinforcement learning.} (2021) \textit{Poster presented at the Society for the Improvement 
+of Psychological Sciences, 2021.} Online. \\
+
+\textbf{Sohail, A.,} Myers J.F.M., Mick I., Clark L., Bowden-Jones H.M., Nutt D.J., Lingford-Hughes A.R., Turton S.P. (2016)
+\textbf{Analysis of the reward system in Disordered Gamblers using MR and 11C-carfentanil PET.} \textit{Poster presented at the British 
+Association for Psychopharmacology Summer Meeting.} Brighton, UK.
+
+
+%-----------TALKS-----------
+\section*{Talks}
+Zhang, L., \& \textbf{Sohail, A. 'Neurocomputational and transdiagnostic components of social and direct learning'} (2024)
+\textit{Neuromethods. Centre for Integrative Neuroscience and Neurodynamics, University of Reading.} \\
+
+Jewell, S.L., \& \textbf{Sohail, A. 'Diversity and Graduate Recruitment - Imploring a Bio/Psychological Framework.'} (2023)
+\textit{Neuromethods. Centre for Integrative Neuroscience and Neurodynamics, University of Reading.} \\
+
+\textbf{Sohail, A. 'Improving Future-oriented Decisions through Metacognitive Coaching: A Proposed Study'.} (2023)
+\textit{Early Career Researcher Conference 2023. School of Psychology and Clinical Language Sciences, University of Reading.} \\
+
+Rossetti, G.M.K., \& \textbf{Sohail, A. 'Striatal Haemodynamic Modulation during Reversal Learning.'} (2021)
+\textit{Neuromethods. Centre for Integrative Neuroscience and Neurodynamics, University of Reading.} \\
+
+
+%-----------REFEREES-----------
+\section*{Referees}
+\textbf{Professor Anastasia Christakou} \\
+Professor of Neuroscience \\
+School of Psychology and Clinical Language Sciences \\
+University of Reading \\
+a.christakou[at]reading.ac.uk \\
+
+\textbf{Dr Lei Zhang} \\
+Associate Professor \\
+School of Psychology \\
+University of Birmingham \\
+l.zhang.13[at]bham.ac.uk
+
+
+%\vspace{1cm}
+\vfill{}
+%\hrulefill
+
+\begin{center}
+{\scriptsize  Last updated: \today\- •\- 
+% ---- PLEASE LEAVE THIS BACKLINK FOR ATTRIBUTION AS PER CC-LICENSE
+Typeset in \href{http://nitens.org/taraborelli/cvtex}{
+\fontspec{Times New Roman}\XeTeX }\\
+% ---- FILL IN THE FULL URL TO YOUR CV HERE
+\href{http://sohaamir.github.io/cv}{http://sohaamir.github.io/cv}}
+\end{center}
+
+\end{document}
