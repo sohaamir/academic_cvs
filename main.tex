@@ -1,0 +1,258 @@
+%!TeX program = xelatex
+\documentclass{prometheus_cv}
+\usepackage[a4paper, left=3.5cm, right=2.5cm, top=2cm, bottom=2cm]{geometry}		% width=5.3in, height=10in, top margin=2cm on each page
+
+\usepackage{xcolor}	
+\definecolor{cardinal}{rgb}{0.77, 0.12, 0.23}
+
+\usepackage{tabularx}
+\usepackage[shortlabels]{enumitem}																			  % define some colors
+\definecolor{highlight}{HTML}{283559}
+\definecolor{highlight2}{HTML}{1A2640}
+\definecolor{link}{HTML}{5C6273}
+
+\usepackage{lipsum}
+\usepackage{siunitx}							% package to properly set units
+\usepackage{fontawesome5}						% package for icons (see list of available icons here: http://mirrors.ibiblio.org/CTAN/fonts/fontawesome5/doc/fontawesome5.pdf)
+\usepackage{academicons}
+
+\usepackage[super]{nth}							% when you write \nth{2} you get a nice superscript
+\usepackage[								% coloring of links
+	colorlinks = true,
+	allcolors=cardinal
+]{hyperref}
+
+\usepackage{fontspec}							% package to change fonts				
+\setmainfont[
+	BoldFont=Cormorant Garamond Bold,
+	ItalicFont=Cormorant Garamond Italic,
+	BoldItalicFont=Cormorant Garamond Bold Italic,
+	SmallCapsFont=CormorantSC-Regular%
+]{Cormorant Garamond Regular}						% Set the main font to Comorant Garamond (https://github.com/CatharsisFonts/Cormorant)
+\newfontfamily\GaramondLight{Cormorant Garamond Light}
+\newcommand\textlf[1]{{\GaramondLight#1}}
+
+\newcommand{\highlight}[1]{\textcolor{highlight}{\textbf{#1}}}		% highlight text as bold and with the highlight color defined above
+\newcommand{\ec}{\textsuperscript{\textdagger}}								% Equal contribution dagger
+
+\usepackage{array,ragged2e}
+\newcolumntype{L}[1]{>{\RaggedRight\arraybackslash}p{#1}} % just a guess...
+\renewcommand{\arraystretch}{1} % this needs to occur before "\begin{tabular}"
+
+% define the header and (not) footer %
+\usepackage{fancyhdr}																		  
+\fancyhf{}
+\rhead{Curriculum Vit\ae}
+\lhead{Aamir Sohail}
+\rfoot{Page \thepage}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0pt}
+
+
+%%%% BIBLIOGRAPHY
+
+\usepackage[
+backend      = biber,
+doi          = false,
+giveninits   = true,
+maxcitenames = 99,
+isbn         = false,
+url          = true,
+maxbibnames	 = 99,
+defernumbers = true
+]{biblatex}
+
+\DeclareSortingTemplate{ymdnt}{
+	\sort{
+		\field{presort}
+	}
+	\sort[final]{
+		\field{sortkey}
+	}
+	\sort[direction=descending]{
+		\field[strside=left,strwidth=4]{sortyear}
+		\field[strside=left,strwidth=4]{year}
+		\literal{9999}
+	}
+	\sort[direction=descending]{
+		\field{month}
+		\literal{9999}
+	}
+	\sort{
+		\field{sortname}
+		\field{author}
+		\field{editor}
+		\field{translator}
+		\field{sorttitle}
+		\field{title}
+	}
+	\sort{
+		\field{sorttitle}
+		\field{title}
+	}
+}
+
+\addbibresource{papers.bib}
+
+\renewbibmacro{in:}{}
+
+
+% Uncomment this if you need a final period for your entries and do not
+% want to place it manually.
+%
+% \DeclareCiteCommand{\fullcite}
+%   {\usebibmacro{prenote}}
+%   {\usedriver{}{\thefield{entrytype}}.}
+%   {\multicitedelim}
+%   {\usebibmacro{postnote}}
+
+\AtEveryBibitem{\clearfield{month}}
+\AtEveryCitekey{\clearfield{month}}
+\AtEveryBibitem{\clearname{editor}}
+\AtEveryCitekey{\clearname{editor}}
+\AtEveryBibitem{\clearlist{location}}
+\AtEveryCitekey{\clearlist{location}}
+
+\renewcommand*{\mkbibcompletename}[1]{%
+	\ifitemannotation{highlight}
+	{\textbf{#1}}
+	{#1}%
+	\ifitemannotation{first}
+	{\kern-0.05em\textsuperscript{$\dagger$}}
+	{}%
+	\ifitemannotation{last}
+	{\textsuperscript{$\ddagger$}}
+	{}%
+}
+
+% Remove the year from the citation of the article in order to make the
+% display less cluttered.
+\renewbibmacro*{issue+date}{%
+	\setunit{\addcomma\space}
+	\iffieldundef{issue}
+	{\usebibmacro{date}}
+	{\printfield{issue}%
+		\setunit*{\addspace}%
+		\usebibmacro{date}%
+	}%
+	\newunit%
+}
+
+\renewbibmacro*{publisher+location+date}{%
+	\printlist{publisher}%
+	\setunit*{\addcomma\space}%
+	\printlist{location}%
+	\setunit*{\addcomma\space}%
+	\usebibmacro{date}%
+	\newunit%
+}
+
+\DeclareFieldFormat[article, incollection, inproceedings, misc, unpublished]{title}{\textit{#1}}
+\DeclareFieldFormat[article]{journaltitle}{\upshape{#1}}
+\DeclareFieldFormat[incollection, inproceedings]{booktitle}{\upshape{#1}}
+
+
+\DeclareFieldFormat{url}{\href{#1}{\mkbibacro{URL}}}
+
+\defbibenvironment{bibliography}
+{\begin{enumerate}[leftmargin=*,itemsep=0em]\setcounter{enumi}{\value{publicationCounter}}}
+	{\setcounter{publicationCounter}{\value{enumi}} \end{enumerate}}
+{\item}
+
+
+\begin{document}
+\thispagestyle{empty}					% Turn off header and footer for the first page
+\pagestyle{fancy}			 		% For the rest of the pages switch to the fancy page style defined just above the document begin
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%% TITLE %%%%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace*{-1cm}
+\centering 
+\input{title.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%% RESEARCH INTERESTS %%%%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\section{Research interests}
+
+
+%Computational modeling, Bayesian statistics, functional magnetic resonance imaging (fMRI), behavioural testing, computational psychiatry,
+%behavioural economics, social decision-making
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%EDUCATION %%%%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace*{0.4cm}
+
+\section{Education}
+\input{education.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%% EMPLOYMENT %%%%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Employment}
+\input{employment.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%% PUBLICATIONS %%%%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \section{Papers}
+% \input{papers.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%% HONORS and SCHOLARSHIPS %%%%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Awards and Grants}
+\input{honors.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%% TEACHING  %%%%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Teaching}
+\input{teaching.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%% MENTORING AND OUTREACH  %%%%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Mentoring and Outreach}
+\input{mentoring.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%% MEMBERSHIPS %%%%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Memberships and Affiliations}
+\input{service.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%% ORGANIZING %%%%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Organising}
+\input{organizing.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%% TALKS  %%%%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Talks}
+\input{talks.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%% POSTERS %%%%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Posters}
+\input{posters.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%% SKILLS %%%%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Skills}
+\input{skills.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%% REFERENCES %%%%%%%%%%%% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{References}
+\input{references.tex}
+
+\end{document}
