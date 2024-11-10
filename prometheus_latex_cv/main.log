@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.11.26)  27 MAY 2024 16:33
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.11.26)  10 NOV 2024 13:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -858,12 +858,12 @@ Package biblatex Info: Automatic encoding selection.
 \openout3 = `main.bcf'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'main.bbl' not found.
+Package biblatex Info: ... file 'main.bbl' found.
 
-No file main.bbl.
+(./main.bbl)
 Package biblatex Info: Reference section=0 on input line 163.
 Package biblatex Info: Reference segment=0 on input line 163.
-(./title.tex
+ (./title.tex
 LaTeX Font Info:    Trying to load font information for TU+academicons on input
  line 28.
 
@@ -883,92 +883,40 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 Package hyperref Warning: bookmark level for unknown cvsubsectionnarrow default
 s to 0.
 
-) (./teaching.tex) (./mentoring.tex
+) (./teaching.tex) (./mentoring.tex [1
 
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@@underline' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hbox' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathsurround' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 2.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 2.
-
-[1
-
-]
-
-Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 31.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 31.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@@underline' on input line 31.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\hbox' on input line 31.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\mathsurround' on input line 31.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\z@' on input line 31.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 31.
-
-) (./service.tex) (./organizing.tex
+]) (./service.tex) (./papers.tex
+\c@papercount=\count436
+)
+(./posters.tex) (./skills.tex
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 13.
+(Font)              <8> on input line 3.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 13.
-) (./talks.tex) (./posters.tex)
-(./skills.tex) [2] (./references.tex
+(Font)              <6> on input line 3.
+) (./references.tex
 Overfull \hbox (75.9162pt too wide) in paragraph at lines 3--11
 []|[]|  
  []
 
 )
-Overfull \hbox (23.99998pt too wide) in paragraph at lines 2--257
+Overfull \hbox (23.99998pt too wide) in paragraph at lines 2--259
 [] 
  []
 
-[3] (./main.aux)
+[2] [3] (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 7A4FF69546A5AE1C21B4C97710B33826;6383.
+(rerunfilecheck)             Checksum: 325A7CBEAB4A9A9EA967EE05F71A58C4;4558.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 25528 strings out of 476683
- 540727 string characters out of 5804046
- 1869018 words of memory out of 5000000
- 45455 multiletter control sequences out of 15000+600000
- 514806 words of font info for 81 fonts, out of 8000000 for 9000
+ 25556 strings out of 476683
+ 541570 string characters out of 5804046
+ 1871018 words of memory out of 5000000
+ 45485 multiletter control sequences out of 15000+600000
+ 514798 words of font info for 80 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 72i,15n,84p,1149b,801s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 72i,15n,84p,1149b,813s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on main.pdf (3 pages).
