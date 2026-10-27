@@ -1,0 +1,11 @@
+# macOS
+.DS_Store
+
+# LaTeX build files
+*.xdv
+*.fls
+*.fdb_latexmk
+*.bbl
+*.blg
+*.log
+*.synctex.gz
