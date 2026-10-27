@@ -23,7 +23,7 @@ The 'Prometheus CV' was made by Christian Bock which you can find [here](https:/
 
 ### Helvetica Neue CV (last updated 27/10/2026)
 
-The 'Helvetica Neue CV' (in `helvetica_neue_latex_cv/`) reproduces the layout of [Romy Lorenz](https://romylorenz.com)'s CV from March 2019 (`RomyLorenz_CV_March2019.pdf`), which was originally made in Microsoft Word. The font sizes, column positions and margins were measured from that PDF, and all of the styling lives in `helvetica_neue_cv.cls`. Like the Prometheus CV, each section is a separate `.tex` file that is pulled into `main.tex`, and the whole CV fits on two pages.
+The 'Helvetica Neue CV' (in `helvetica_neue_latex_cv/`) reproduces the layout of [Romy Lorenz](https://romylorenz.com)'s CV from March 2019, which was originally made in Microsoft Word. The font sizes, column positions and margins were measured from a PDF of her CV, and all of the styling lives in `helvetica_neue_cv.cls`. Like the Prometheus CV, each section is a separate `.tex` file that is pulled into `main.tex`, and the whole CV fits on two pages.
 
 It must be compiled with XeLaTeX, and needs the Helvetica Neue font, which comes with macOS (so it won't compile on Overleaf as-is):
 
