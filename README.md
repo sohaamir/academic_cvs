@@ -21,7 +21,7 @@ My version using Linux Libertine O as it's font was written by [Dario Taraborell
 
 The 'Prometheus CV' was made by Christian Bock which you can find [here](https://github.com/chrisby/prometheusCV), although I used [this version](https://github.com/filippomazzoli/academic-CV) forked from the initial repository by Filippo Mazzoli.
 
-### Helvetica Neue CV (last updated 27/10/2026)
+### Helvetica Neue CV (last updated 28/10/2026)
 
 The 'Helvetica Neue CV' (in `helvetica_neue_latex_cv/`) reproduces the layout of [Romy Lorenz](https://romylorenz.com)'s CV from March 2019, which was originally made in Microsoft Word. The font sizes, column positions and margins were measured from a PDF of her CV, and all of the styling lives in `helvetica_neue_cv.cls`. Like the Prometheus CV, each section is a separate `.tex` file that is pulled into `main.tex`, and the whole CV fits on two pages.
 
