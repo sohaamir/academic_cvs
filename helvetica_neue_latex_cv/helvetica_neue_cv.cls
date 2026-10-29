@@ -138,7 +138,7 @@
 	\AddToHookNext{shipout/foreground}{\cv@firstpageheader}%
 	\vspace*{-17bp}%
 	{\centering
-		\sizename\fakesc[0.79]{\cv@name}\par
+		\sizename\cv@name\par
 		\ifx\cv@updated\@empty\else
 			\vspace{-12bp}{\sizedesc Last updated: \cv@updated}\par
 		\fi}%
@@ -160,7 +160,7 @@
 }
 \fancypagestyle{cv}{%
 	\fancyhf{}%
-	\fancyhead[L]{\sizerunhead Curriculum Vitae -- \fakesc[0.826]{\cv@name}}%
+	\fancyhead[L]{\sizerunhead Curriculum Vitae -- \cv@name}%
 	\fancyfoot[C]{\cv@pagecount}%
 }
 \pagestyle{cv}
